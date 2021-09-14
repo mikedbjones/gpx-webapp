@@ -1,8 +1,15 @@
 # gpx-webapp
-A simple GPX viewer web app using Flask.
+A simple GPX viewer web app using Python and Flask.
 
 ## Installation
-`pip install -r requirements.txt`
+Run the following code to clone the repo, create a virtual environment and install the required packages:
+```
+git clone https://github.com/mikedbjones/gpx-webapp
+cd gpx-webapp
+virtualenv -p /usr/bin/python3 gpx-env
+source gpx-env/bin/activate
+pip install -r requirements.txt
+```
 
 ## Usage
 1. Run `python app.py`.
