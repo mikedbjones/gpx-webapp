@@ -1,0 +1,7 @@
+numpy==1.20.1
+pandas==1.2.4
+matplotlib==3.4.2
+Flask==2.0.1
+folium==0.12.1
+gpxpy==1.4.2
+Werkzeug==2.0.1

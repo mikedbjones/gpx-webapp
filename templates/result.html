@@ -1,0 +1,71 @@
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+        <title>GPX output</title>
+    </head>
+	<body>
+		<nav class="navbar navbar-inverse">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">GPX output</a>
+            </div>
+          </div>
+        </nav>
+		
+		<div class="container">
+
+				<div class="row">
+					Name: {{ name }}
+				</div>
+				
+				<div class="row">
+					Start: {{ start }}
+				</div>
+
+				<div class="row">
+					Start latitude: {{ start_lat }}
+				</div>
+
+				<div class="row">
+					Start longitude: {{ start_lon }}
+				</div>
+				
+				<div class="row">
+					Finish: {{ finish }}
+				</div>
+				
+				<div class="row">
+					Elapsed time: {{ elapsed }}
+				</div>
+				
+				<div class="row">
+					Minimum interval: {{ min_interval }}
+				</div>
+				
+				<div class="row">
+					Total distance: {{ total_dist_km }} / {{ total_dist_mi }}
+				</div>
+
+				<div class="row">
+					Elevation gain: {{ elev_change }}
+				</div>
+				
+				<div class="row">
+					Is loop? (tolerance 100m): {{ loop_bool }}
+				</div>
+
+        </div>
+		<iframe width="60%" height="350" src={{ map }}></iframe>
+	</body>
+</html>
