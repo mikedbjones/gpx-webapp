@@ -24,3 +24,5 @@ The output includes:
 Example output:
 
 ![output](https://github.com/mikedbjones/gpx-webapp/blob/main/examples/example.png)
+
+Thanks to [jonblack](https://github.com/jonblack/cmpgpx) from whom I have used `geo.bearing()` and `geo.interpolate_distance()` functions.
