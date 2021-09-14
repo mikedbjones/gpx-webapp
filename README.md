@@ -1,5 +1,5 @@
 # gpx-webapp
-A simple in-browser GPX viewer using Flask.
+A simple GPX viewer web app using Flask.
 
 ## Installation
 `pip install -r requirements.txt`
